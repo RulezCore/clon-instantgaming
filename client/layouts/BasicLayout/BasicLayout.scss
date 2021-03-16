@@ -1,9 +1,17 @@
 .basic-layout {
     min-height: 100vh;
+    background-image: url("https://game-ecommerce-rulez.s3.eu-west-3.amazonaws.com/static/bg-web.jpg");
+    background-size: cover;
+    background-position: center;
 
     .content {
         background-color: $background-gray-light;
-        height: 100vh;
+        height: calc(100vh - 130px);
+        box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: .75);
+        overflow-y: scroll;
 
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
